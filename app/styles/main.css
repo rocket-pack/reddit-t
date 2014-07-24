@@ -34,9 +34,9 @@ p {
   color: red; }
 .about p {
   color: #666666; }
-.about p strong {
+.about strong {
   color: #222222; }
-.about p a:active, .about p a:visited {
+.about a, .about a:active, .about a:visited {
   color: #336699; }
 
 .container {
