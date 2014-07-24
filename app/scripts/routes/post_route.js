@@ -1,4 +1,7 @@
 RedditT.PostRoute = Ember.Route.extend({
+  activate: function() {
+    $(document).attr('title', this.modelFor(this.routeName).get('title'));
+  },
   model: function(params) {
     return $.getJSON("https://pay.reddit.com/" + params.post_slug + ".json")
           .then(function(api_response) {
