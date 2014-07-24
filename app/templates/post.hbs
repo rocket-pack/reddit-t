@@ -3,5 +3,7 @@
   <span class="author">By <a rel="author" {{bind-attr href=author_url}}>{{author}}</a></span>
   {{{body}}}
   <hr />
+  <button {{action 'goToNextPost'}}>Next Post</button>
+  <button {{action 'goToPreviousPost'}}>Previous Post</button>
   <a {{bind-attr href=comments_url}}>{{num_comments}} comments back on Reddit</a>
 </section>
