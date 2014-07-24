@@ -5,8 +5,6 @@
   }
 
   p { color: $grey; }
-  p strong { color: $very-dark-grey; }
-  p a {
-    &:active, &:visited { color: $blue; }
-  }
+  strong { color: $very-dark-grey; }
+  a, a:active, a:visited { color: $blue; }
 }
