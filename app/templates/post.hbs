@@ -1,6 +1,6 @@
 <section class="post">
   <h1>{{title}}</h1>
-  <a rel="author" {{bind-attr href=author_url}}>{{author}}</a>
+  <span class="author">By <a rel="author" {{bind-attr href=author_url}}>{{author}}</a></span>
   {{{body}}}
   <hr />
   <a {{bind-attr href=comments_url}}>{{num_comments}} comments back on Reddit</a>
