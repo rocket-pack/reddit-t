@@ -29,6 +29,16 @@ p {
     border-bottom: 1px solid #dddddd;
     text-align: center; }
 
+.about h1.title em {
+  text-decoration: none;
+  color: red; }
+.about p {
+  color: #666666; }
+.about p strong {
+  color: #222222; }
+.about p a:active, .about p a:visited {
+  color: #336699; }
+
 .container {
   max-width: 68em;
   margin-left: auto;
