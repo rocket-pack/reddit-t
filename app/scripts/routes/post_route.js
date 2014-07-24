@@ -8,6 +8,10 @@ RedditT.PostRoute = Ember.Route.extend({
             decoded = $('<textarea />').html(post.selftext_html).val();
             post.body = Ember.String.htmlSafe(decoded);
             return post;
+          })
+          .then(function(post) {
+            model = RedditT.Post.create(post);
+            return model;
           });
   }
 });
