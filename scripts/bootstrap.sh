@@ -15,4 +15,4 @@ echo "cd /home/deployer/reddit-t" > /etc/cron.d/reddit-t
 echo "git pull origin master" >> /etc/cron.d/reddit-t
 bash /etc/cron.d/reddit-t
 
-echo 'Project created. Now log in and add your public key to /home/deployer/.ssh/authorized_keys and then run scripts/secure.sh'
+echo "Project created. Now log in and add your public key to /home/deployer/.ssh/authorized_keys and then run scripts/secure.sh. If you require sudo, set a password."
