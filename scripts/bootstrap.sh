@@ -4,6 +4,7 @@ sudo su root
 apt-get update
 apt-get install -y nginx fail2ban varnish unattended-upgrades git-core htop
 adduser --disabled-password --gecos "" deployer
+usermod -a -G sudo deployer
 mkdir -p /home/deployer/.ssh
 mkdir -p /home/deployer/reddit-t
 git init /home/deployer/reddit-t
