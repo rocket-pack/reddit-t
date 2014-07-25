@@ -25,5 +25,9 @@
         <!-- build:js(.tmp) scripts/main.js -->
         <script src="scripts/combined-scripts.js"></script>
         <!-- endbuild -->
+
+        <script>
+          if (location.hash = '') window.location = location.origin + "/#" + location.hash;
+        </script>
 </body>
 </html>
