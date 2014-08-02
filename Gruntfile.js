@@ -242,6 +242,10 @@ module.exports = function (grunt) {
             dist: {
                 files: [
                     {
+                      dest: '<%= yeoman.dist %>/404.html',
+                      src: '<%= yeoman.app %>/index.html'
+                    },
+                    {
                         expand: true,
                         dot: true,
                         cwd: '<%= yeoman.app %>',
