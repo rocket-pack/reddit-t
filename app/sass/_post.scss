@@ -2,6 +2,13 @@
   @include span-columns(6);
   @include shift(3);
 
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+    padding: $padding;
+  }
+
+
   h1 {
     padding-bottom: $padding * 2;
     border-bottom: 1px solid $very-light-grey;
