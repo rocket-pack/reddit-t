@@ -3,7 +3,11 @@ $very-light-grey: #DDD;
 $very-dark-grey: #222;
 $blue: #369;
 $grey: #666;
+$light_grey: #999;
 $red: red;
 
 //Layout/spacing
 $padding: 10px;
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 650px 4);
