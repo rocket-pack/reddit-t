@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 h1 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 200%; }
 
@@ -13,8 +13,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px; }
 
-p {
-  line-height: 1.25; }
+.md {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5; }
 
 .post {
   float: left;
@@ -24,10 +29,25 @@ p {
   margin-left: 25.58941%; }
   .post:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 650px) {
+    .post {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%;
+      padding: 10px; }
+      .post:last-child {
+        margin-right: 0; } }
   .post h1 {
     padding-bottom: 20px;
     border-bottom: 1px solid #dddddd;
     text-align: center; }
+
+.author {
+  color: #999999; }
+  .author a, .author a:active, .author a:hover {
+    color: #666666; }
 
 .about h1.title em {
   text-decoration: none;
