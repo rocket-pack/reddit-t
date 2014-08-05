@@ -1,7 +1,8 @@
 RedditT.PostRoute = Ember.Route.extend({
   actions: {
     didTransition: function() {
-      document.title = this.modelFor('post').get('title')
+      document.title = this.modelFor('post').get('title');
+      window.scrollTo(0, 0);
     }
   },
   model: function(params) {
