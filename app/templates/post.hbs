@@ -3,7 +3,7 @@
   <span class="author">By <a rel="author" {{bind-attr href=author_url}}>{{author}}</a></span>
   {{{body}}}
   <hr />
-  {{#link-to 'post' nextPost.permalink}}Next Post{{/link-to}}
-  {{#link-to 'post' previousPost.permalink}}Previous Post{{/link-to}}
+  {{#link-to 'post' nextPost.permalink classNames='btn'}}Next Post{{/link-to}}
   <a {{bind-attr href=comments_url}}>{{num_comments}} comments back on Reddit</a>
+  {{#link-to 'post' previousPost.permalink classNames='btn'}}Previous Post{{/link-to}}
 </section>
