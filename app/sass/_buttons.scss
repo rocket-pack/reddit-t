@@ -1,3 +1,5 @@
 .btn {
   @include button();
+  text-align: center;
+}
 }
