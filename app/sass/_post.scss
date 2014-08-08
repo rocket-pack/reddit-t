@@ -14,4 +14,33 @@
     border-bottom: 1px solid $very-light-grey;
     text-align: center;
   }
+  
+  .post-controls {
+    margin-top: $padding * 2;
+    background: $blue;
+    border-color: $dark-blue;
+    @include outer-container;
+    .control {
+      @include span-columns(4);
+      text-align: center;
+
+      @include media($mobile) {
+        width: 100%;
+        display: block;
+        margin: $padding auto;
+        .btn { 
+          display: block;
+          float: none !important;
+        }
+      }
+
+      &:last-child {
+        .btn { float: right; }
+      }
+    }
+
+    .control-label {
+      font-size: 14px;
+    }
+  }
 }
