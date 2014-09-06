@@ -431,14 +431,16 @@ body {
     .post .post-controls .control-label {
       font-size: 14px; }
 
-body {
-  padding: 40px; }
+#how-to-use hr {
+  border: 0;
+  border-bottom: dashed 5px #b3b3b3;
+  margin: 30px auto; }
 
 .panel {
   border: solid 1px #dddddd;
   background: #f7f7f7;
   padding: 10px;
-  border-radius: 4px; }
+  border-radius: 3px; }
 
 .btn {
   border: 1px solid #076fe4;
@@ -468,6 +470,70 @@ body {
   .btn:disabled {
     opacity: 0.5;
     cursor: not-allowed; }
+
+.accordion-tabs-minimal {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  margin-bottom: 1.5em; }
+  .accordion-tabs-minimal:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 40em) {
+    .accordion-tabs-minimal {
+      border: none; } }
+  @media screen and (min-width: 40em) {
+    .accordion-tabs-minimal li.tab-header-and-content {
+      display: inline; } }
+  .accordion-tabs-minimal li.tab-header-and-content:first-child a.tab-link {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 0; }
+  .accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; } }
+  .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
+    background-color: white;
+    border-top: 1px solid #999999;
+    color: #333333;
+    display: block;
+    font-weight: 400;
+    padding: 0.75em 1.618em; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
+        display: inline-block;
+        border-top: 0;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px; } }
+    .accordion-tabs-minimal li.tab-header-and-content a.tab-link:hover {
+      color: #1963ae; }
+    .accordion-tabs-minimal li.tab-header-and-content a.tab-link:focus {
+      outline: none; }
+    .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
+      background-color: white;
+      border-bottom: 0; }
+      @media screen and (min-width: 40em) {
+        .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
+          background-color: white;
+          border: 1px solid #999999;
+          border-bottom: 1px solid white;
+          margin-bottom: -1px; } }
+  .accordion-tabs-minimal li.tab-header-and-content .tab-content {
+    padding: 1.5em 1.618em;
+    background: white;
+    display: none;
+    overflow: hidden;
+    width: 100%; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal li.tab-header-and-content .tab-content {
+        border-top: 1px solid #999999;
+        float: left;
+        left: 0;
+        padding: 0.75em 0.809em; } }
 
 @-webkit-keyframes rotateplane {
   0% {
@@ -510,15 +576,61 @@ body {
   .author a, .author a:active, .author a:hover {
     color: #666666; }
 
-.about h1.title em {
-  text-decoration: none;
+.hero-unit {
+  color: #1f7ddb;
+  background-color: white;
+  border-bottom: solid 10px #134a81;
+  margin-bottom: 40px; }
+  .hero-unit .hero-unit-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    margin: auto;
+    text-align: center; }
+    .hero-unit .hero-unit-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .hero-unit .hero-unit-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .hero-unit .hero-unit-inner a, .hero-unit .hero-unit-inner a:active, .hero-unit .hero-unit-inner a:visited {
+      color: #1963ae; }
+    .hero-unit .hero-unit-inner .title {
+      font-family: Georgia,"Times New Roman",Times,serif; }
+    .hero-unit .hero-unit-inner .tagline {
+      font-weight: 100;
+      font-family: sans-serif;
+      font-size: 150%; }
+
+.title {
+  font-size: 400%;
+  font-family: serif; }
+
+.subtle-title {
+  color: #a6a6a6;
+  text-align: center;
+  font-weight: 200;
+  font-family: sans-serif; }
+
+.accented-title {
+  font-style: italic;
+  text-align: center; }
+
+.address-box {
+  font-size: 150%;
+  margin: 20px auto;
+  text-align: center; }
+
+.reddit-address, .reddit-t-address {
+  color: #1963ae;
+  font-weight: bold;
+  padding-right: 2px; }
+
+.reddit-t-address {
   color: red; }
-.about p {
-  color: #666666; }
-.about strong {
-  color: #222222; }
-.about a, .about a:active, .about a:visited {
-  color: #1963ae; }
 
 .container {
   max-width: 68em;
