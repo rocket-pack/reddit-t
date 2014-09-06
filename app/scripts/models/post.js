@@ -1,3 +1,5 @@
+/* global $:false */
+
 RedditT.Post =  Ember.Object.extend({
   author_url: function() { return "http://reddit.com/u/" + this.get('author'); }.property('author'),
   comments_url: function() { return this.get('url') + "comments"; }.property('url'),
@@ -7,7 +9,8 @@ RedditT.Post =  Ember.Object.extend({
     return Ember.String.htmlSafe(decoded);
   }.property('selftext_html'),
   nextPost: function() {
-    model = this
+    var model = this;
+
     return $.getJSON(this.get('subreddit_url') + '.json', {limit: 1, after: this.get('name')})
             .then(function(api_response) {
               model.set('nextPost', RedditT.Post.create(api_response.data.children[0].data));
@@ -15,11 +18,12 @@ RedditT.Post =  Ember.Object.extend({
             });
   }.property('subreddit_url'),
   previousPost: function() {
-    current_model = this;
+    var model = this;
+
     return $.getJSON(this.get('subreddit_url') + '.json', {limit: 1, before: this.get('name')})
           .then(function(api_response) {
-            if (api_response.data.children.length == 0) return current_model;
-            current_model.set('previousPost', RedditT.Post.create(api_response.data.children[0].data));
+            if (api_response.data.children.length === 0) return model;
+            model.set('previousPost', RedditT.Post.create(api_response.data.children[0].data));
             return model;
           });
   }.property('subreddit_url')

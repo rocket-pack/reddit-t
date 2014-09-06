@@ -1,3 +1,5 @@
+/* global $:false */
+
 RedditT.PostRoute = Ember.Route.extend({
   actions: {
     didTransition: function() {
@@ -13,7 +15,7 @@ RedditT.PostRoute = Ember.Route.extend({
             return api_response.data.children[0].data;
           })
           .then(function(post) {
-            model = RedditT.Post.create(post);
+            var model = RedditT.Post.create(post);
             return model;
           });
   }
