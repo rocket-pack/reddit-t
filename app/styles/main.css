@@ -431,11 +431,6 @@ body {
     .post .post-controls .control-label {
       font-size: 14px; }
 
-#how-to-use hr {
-  border: 0;
-  border-bottom: dashed 5px #b3b3b3;
-  margin: 30px auto; }
-
 .panel {
   border: solid 1px #dddddd;
   background: #f7f7f7;
