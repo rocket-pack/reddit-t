@@ -6,12 +6,25 @@ $blue: #cee3f8;
 $dark-blue: #5f99cf;
 $medium-blue: darken($blue, 50%);
 $grey: #666;
+$dark-grey: #333;
 $light_grey: #999;
 $red: red;
 
 //Layout/spacing
 $padding: 10px;
-$base-border-radius: 4px;
+$base-border-radius: 3px;
+$base-background-color: white;
+
+$base-link-color: $medium-blue;
+$hover-link-color: darken($base-link-color, 15);
+
+
+// Borders
+$base-line-height: 1.5;
+$base-spacing: $base-line-height * 1em;
+$base-border-color: $light-grey;
+$base-border: 1px solid $base-border-color;
 
 // Breakpoints
 $mobile: new-breakpoint(max-width 650px 4);
+$medium-screen: em(640);
