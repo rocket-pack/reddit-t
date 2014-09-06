@@ -10,7 +10,9 @@
 @import 'tabs';
 @import 'loading';
 @import 'author';
-@import 'about';
+@import 'hero_unit';
+@import 'titles';
+@import 'address_box';
 
 .container {
   @include outer-container;
