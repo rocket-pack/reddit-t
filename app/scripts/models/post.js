@@ -27,4 +27,4 @@ RedditT.Post =  Ember.Object.extend({
             return model;
           });
   }.property('subreddit_url')
-})
+});

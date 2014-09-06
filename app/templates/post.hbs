@@ -1,17 +1,19 @@
-<section class="post">
-  <h1>{{title}}</h1>
-  <span class="author">By <a rel="author" {{bind-attr href=author_url}}>{{author}}</a></span>
-  {{{body}}}
-  
-  <div class="panel post-controls">
-    <div class="control">
-      {{#link-to 'post' previousPost.permalink classNames='btn'}}Previous Post{{/link-to}}
+<section class="container">
+  <section class="post">
+    <h1>{{title}}</h1>
+    <span class="author">By <a rel="author" {{bind-attr href=author_url}}>{{author}}</a></span>
+    {{{body}}}
+
+    <div class="panel post-controls">
+      <div class="control">
+        {{#link-to 'post' previousPost.permalink classNames='btn'}}Previous Post{{/link-to}}
+      </div>
+      <div class="control control-label">
+        <a {{bind-attr href=comments_url}}>{{num_comments}} comments back on Reddit</a>
+      </div>
+      <div class="control">
+        {{#link-to 'post' nextPost.permalink classNames='btn'}}Next Post{{/link-to}}
+      </div>
     </div>
-    <div class="control control-label">
-      <a {{bind-attr href=comments_url}}>{{num_comments}} comments back on Reddit</a>
-    </div>
-    <div class="control">
-      {{#link-to 'post' nextPost.permalink classNames='btn'}}Next Post{{/link-to}}
-    </div>
-  </div>
+  </section>
 </section>
