@@ -1,0 +1,29 @@
+.hero-unit {
+  color: lighten($medium-blue, 10%);
+  background-color: white;
+  border-bottom: solid 10px darken($medium-blue, 10%);
+  margin-bottom: 40px;
+
+  .hero-unit-inner {
+    @include outer-container;
+    @include clearfix;
+
+    padding: 3em;
+    margin: auto;
+    text-align: center;
+
+    a, a:active, a:visited {
+      color: $medium-blue;
+    }
+
+    .title {
+      font-family: Georgia,"Times New Roman",Times,serif;
+    }
+
+    .tagline {
+      font-weight: 100;
+      font-family: sans-serif;
+      font-size: 150%;
+    }
+  }
+}

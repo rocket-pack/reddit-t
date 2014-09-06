@@ -1,0 +1,16 @@
+.address-box {
+  font-size: 150%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.reddit-address {
+  color: $medium-blue;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.reddit-t-address {
+  @extend .reddit-address;
+  color: $red;
+}
