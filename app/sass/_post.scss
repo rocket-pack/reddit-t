@@ -14,9 +14,9 @@
     border-bottom: 1px solid $very-light-grey;
     text-align: center;
   }
-  
+
   .post-controls {
-    margin-top: $padding * 2;
+    margin: $padding * 2 auto;
     background: $blue;
     border-color: $dark-blue;
     @include outer-container;
@@ -28,7 +28,7 @@
         width: 100%;
         display: block;
         margin: $padding auto;
-        .btn { 
+        .btn {
           display: block;
           float: none !important;
         }
