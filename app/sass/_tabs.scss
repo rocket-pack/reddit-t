@@ -82,6 +82,10 @@
     overflow: hidden;
     width: 100%;
 
+    &.is-open {
+      display: block;
+    }
+
     @include media($tab-mode) {
       border-top: $tab-border;
       float: left;
