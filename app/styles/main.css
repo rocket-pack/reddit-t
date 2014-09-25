@@ -468,8 +468,9 @@ body {
 
 .accordion-tabs-minimal {
   border: 1px solid #999;
-  border-radius: 3px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  list-style-type: none;
+  padding: 0; }
   .accordion-tabs-minimal:after {
     content: "";
     display: table;
@@ -615,7 +616,14 @@ body {
 .address-box {
   font-size: 150%;
   margin: 20px auto;
-  text-align: center; }
+  text-align: center;
+  word-wrap: break-word; }
+
+.reddit-address, .reddit-t-address, .reddit-t-address {
+  display: block; }
+  @media screen and (min-width: 40em) {
+    .reddit-address, .reddit-t-address, .reddit-t-address {
+      display: inline; } }
 
 .reddit-address, .reddit-t-address {
   color: #1963ae;
