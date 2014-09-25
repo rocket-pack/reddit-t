@@ -4,6 +4,13 @@
   text-align: center;
   word-wrap: break-word;
 }
+
+.reddit-address, .reddit-t-address {
+  display: block;
+
+  @include media($medium-screen) {
+    display: inline;
+  }
 }
 
 .reddit-address {
