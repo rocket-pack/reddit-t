@@ -467,9 +467,9 @@ body {
     cursor: not-allowed; }
 
 .accordion-tabs-minimal {
-  border: 1px solid #999;
-  margin-bottom: 1.5em;
+  border: 0;
   list-style-type: none;
+  margin: 0;
   padding: 0; }
   .accordion-tabs-minimal:after {
     content: "";
@@ -482,41 +482,42 @@ body {
     .accordion-tabs-minimal li.tab-header-and-content {
       display: inline; } }
   .accordion-tabs-minimal li.tab-header-and-content:first-child a.tab-link {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-top: 0; }
   .accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px; }
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
     @media screen and (min-width: 40em) {
       .accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; } }
   .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
-    background-color: white;
-    border-top: 1px solid #999;
+    background-color: #f5f5f5;
+    border-top: 0;
     color: #333;
     display: block;
     font-weight: 400;
+    font-size: 125%;
     padding: 0.75em 1.618em; }
     @media screen and (min-width: 40em) {
       .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
         display: inline-block;
         border-top: 0;
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px; } }
+        border-top-right-radius: 0;
+        border-top-left-radius: 0; } }
     .accordion-tabs-minimal li.tab-header-and-content a.tab-link:hover {
       color: #1963ae; }
     .accordion-tabs-minimal li.tab-header-and-content a.tab-link:focus {
       outline: none; }
     .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
-      background-color: white;
+      background-color: gainsboro;
       border-bottom: 0; }
       @media screen and (min-width: 40em) {
         .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
-          background-color: white;
-          border: 1px solid #999;
-          border-bottom: 1px solid white;
+          background-color: gainsboro;
+          border: 0;
+          border-bottom: 1px solid gainsboro;
           margin-bottom: -1px; } }
   .accordion-tabs-minimal li.tab-header-and-content .tab-content {
     padding: 1.5em 1.618em;
@@ -528,7 +529,7 @@ body {
       display: block; }
     @media screen and (min-width: 40em) {
       .accordion-tabs-minimal li.tab-header-and-content .tab-content {
-        border-top: 1px solid #999;
+        border-top: 0;
         float: left;
         left: 0;
         padding: 0.75em 0.809em; } }
@@ -571,15 +572,27 @@ body {
     color: #666666; }
 
 .hero-unit {
-  color: #1f7ddb;
-  background-color: white;
-  border-bottom: solid 10px #134a81;
-  margin-bottom: 40px; }
+  background-color: #cee3f8;
+  border-top: solid 10px #134a81;
+  border-bottom: solid 1px #134a81; }
+  @media screen and (min-width: 40em) {
+    .hero-unit {
+      border-bottom: solid 10px #134a81;
+      border-top: none;
+      margin-bottom: 40px; }
+      .hero-unit .hero-unit-inner {
+        padding: 3em; }
+        .hero-unit .hero-unit-inner .title {
+          font-size: 400%;
+          margin: auto; }
+        .hero-unit .hero-unit-inner .tagline {
+          font-size: 150%;
+          text-align: center; } }
   .hero-unit .hero-unit-inner {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    padding: 3em;
+    padding: 1em;
     margin: auto;
     text-align: center; }
     .hero-unit .hero-unit-inner:after {
@@ -593,11 +606,14 @@ body {
     .hero-unit .hero-unit-inner a, .hero-unit .hero-unit-inner a:active, .hero-unit .hero-unit-inner a:visited {
       color: #1963ae; }
     .hero-unit .hero-unit-inner .title {
-      font-family: Georgia,"Times New Roman",Times,serif; }
+      font-family: Georgia,"Times New Roman",Times,serif;
+      margin: 0.5em auto;
+      font-size: 300%;
+      color: #1963ae; }
     .hero-unit .hero-unit-inner .tagline {
       font-weight: 100;
       font-family: sans-serif;
-      font-size: 150%; }
+      text-align: justify; }
 
 .title {
   font-size: 400%;
