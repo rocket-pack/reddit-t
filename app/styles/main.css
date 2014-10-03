@@ -511,13 +511,13 @@ body {
     .accordion-tabs-minimal li.tab-header-and-content a.tab-link:focus {
       outline: none; }
     .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
-      background-color: gainsboro;
+      background-color: white;
       border-bottom: 0; }
       @media screen and (min-width: 40em) {
         .accordion-tabs-minimal li.tab-header-and-content a.tab-link.is-active {
-          background-color: gainsboro;
+          background-color: white;
           border: 1px solid #999;
-          border-bottom: 1px solid gainsboro;
+          border-bottom: 1px solid white;
           margin-bottom: -1px; } }
   .accordion-tabs-minimal li.tab-header-and-content .tab-content {
     padding: 1.5em 1.618em;
