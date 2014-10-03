@@ -2,3 +2,10 @@
   @include button();
   text-align: center;
 }
+
+.btn-home {
+  @include button(pill, $blue);
+  margin: auto;
+  width: 30%;
+  display: block;
+}

@@ -1,9 +1,10 @@
 .accordion-tabs-minimal {
   $tab-border-color: $base-border-color;
-  $tab-border: 1px solid $tab-border-color;
+  $tab-border: 0;
+  $tab-border-radius: 0;
   $tab-content-background: $base-background-color;
-  $tab-active-background: $tab-content-background;
-  $tab-inactive-color: $base-background-color;
+  $tab-active-background: darken(whiteSmoke, 10%);
+  $tab-inactive-color: $whiteSmoke;
   $tab-inactive-hover-color: darken($light-grey, 5);
   $tab-mode: $medium-screen;
 
@@ -12,9 +13,13 @@
   margin-bottom: $base-spacing;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
   @include media($tab-mode) {
     border: none;
+    $tab-border: 1px solid $tab-border-color;
+    $tab-border-radius: $base-border-radius;
+    $tab-active-background: white;
   }
 
   li.tab-header-and-content {
@@ -24,14 +29,14 @@
     }
 
     &:first-child a.tab-link {
-      border-top-left-radius: $base-border-radius;
-      border-top-right-radius: $base-border-radius;
+      border-top-left-radius: $tab-border-radius;
+      border-top-right-radius: $tab-border-radius;
       border-top: 0;
     }
 
     &:last-child a.tab-link {
-      border-bottom-left-radius: $base-border-radius;
-      border-bottom-right-radius: $base-border-radius;
+      border-bottom-left-radius: $tab-border-radius;
+      border-bottom-right-radius: $tab-border-radius;
 
       @include media($tab-mode) {
         border-bottom-left-radius: 0;
@@ -51,8 +56,8 @@
     @include media($tab-mode) {
       display: inline-block;
       border-top: 0;
-      border-top-right-radius: $base-border-radius;
-      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $tab-border-radius;
+      border-top-left-radius: $tab-border-radius;
     }
 
     &:hover {
