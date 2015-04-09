@@ -1,0 +1,10 @@
+.about {
+  h1.title em {
+    text-decoration: none;
+    color: $red;
+  }
+
+  p { color: $grey; }
+  strong { color: $very-dark-grey; }
+  a, a:active, a:visited { color: $medium-blue; }
+}

@@ -1,0 +1,25 @@
+.address-box {
+  font-size: 150%;
+  margin: 20px auto;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.reddit-address, .reddit-t-address {
+  display: block;
+
+  @include media($medium-screen) {
+    display: inline;
+  }
+}
+
+.reddit-address {
+  color: $medium-blue;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.reddit-t-address {
+  @extend .reddit-address;
+  color: $red;
+}
