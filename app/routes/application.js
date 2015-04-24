@@ -1,4 +1,6 @@
-RedditT.ApplicationRoute = Ember.Route.extend({
+import Ember from "ember";
+
+export default  Ember.Route.extend({
     // admittedly, this should be in IndexRoute and not in the
     // top level ApplicationRoute; we're in transition... :-)
     model: function () {

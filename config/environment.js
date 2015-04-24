@@ -40,8 +40,17 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
   }
 
-  return ENV;
-};
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self'",
+    'font-src': "'self'",
+    'connect-src': "'self' https://pay.reddit.com",
+    'img-src': "'self'",
+    'style-src': "'self'",
+    'media-src': "'self'"
+  }
+
+return ENV;
+}

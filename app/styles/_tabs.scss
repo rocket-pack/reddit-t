@@ -3,7 +3,7 @@
   $tab-border: 0;
   $tab-border-radius: 0;
   $tab-content-background: $base-background-color;
-  $tab-active-background: darken(whiteSmoke, 10%);
+  $tab-active-background: darken($white-smoke, 10%);
   $tab-inactive-color: $whiteSmoke;
   $tab-inactive-hover-color: darken($light-grey, 5);
   $tab-mode: $medium-screen;

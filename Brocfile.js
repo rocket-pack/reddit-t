@@ -17,4 +17,6 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('vendor/jquery.refills.tabs.js');
+
 module.exports = app.toTree();

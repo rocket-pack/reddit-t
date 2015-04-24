@@ -1,6 +1,7 @@
-/* global $:false */
+import Ember from "ember";
+import Post from "../models/post.js";
 
-RedditT.PostRoute = Ember.Route.extend({
+export default Ember.Route.extend({
   actions: {
     didTransition: function() {
       document.title = this.modelFor('post').get('title');
@@ -8,14 +9,17 @@ RedditT.PostRoute = Ember.Route.extend({
     }
   },
   model: function(params) {
-    return $.getJSON("https://pay.reddit.com/" + params.post_slug + ".json", {limit: 1})
+    return Ember.$.getJSON("https://pay.reddit.com/" + params.post_slug + ".json", {limit: 1})
           .then(function(api_response) {
             // Posts are returned within an array, subreddit/multireddit listings are not
-            if (api_response instanceof Array) api_response = api_response[0];
+            if (api_response instanceof Array) {
+              api_response = api_response[0];
+            }
+
             return api_response.data.children[0].data;
           })
           .then(function(post) {
-            var model = RedditT.Post.create(post);
+            var model = Post.create(post);
             return model;
           });
   }

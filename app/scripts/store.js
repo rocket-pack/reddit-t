@@ -1,1 +1,0 @@
-RedditT.ApplicationAdapter = DS.FixtureAdapter;
