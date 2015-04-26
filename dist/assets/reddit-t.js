@@ -954,7 +954,7 @@ catch(err) {
 if (runningTests) {
   require("reddit-t/tests/test-helper");
 } else {
-  require("reddit-t/app")["default"].create({"name":"reddit-t","version":"0.0.0.a756ebc1"});
+  require("reddit-t/app")["default"].create({"name":"reddit-t","version":"0.0.0.fc530cf9"});
 }
 
 /* jshint ignore:end */
